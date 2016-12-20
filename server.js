@@ -28,6 +28,6 @@ app.use(bodyParser.json());
 app.use('/',index);
 app.use('/api',messages);
 
-app.listen(port || process.env.PORT ||,function(){
+app.listen(port || process.env.PORT,function(){
     console.log('server started on port'+ port);
 });
