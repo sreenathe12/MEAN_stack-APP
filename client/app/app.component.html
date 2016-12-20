@@ -1,0 +1,27 @@
+<img [src]="source" width="200" height="150" style="float: left; margin-right: 10px; margin-bottom: 5px; padding: 0px"/>
+<h2>SREENATH CHANDRA<br><small> B_TECH,M.S</small></h2>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+<p class="lead">This is Sreenath ,Presently completed my Masters in Computer Science . before that i worked as entry level web devloper in ACHALA I.T solutions. Although i loved my job i soon realized that i ma ready for more challenging tasks. basically i am result oriented employee for example in my last job i am the first in my team promoted to higher level team. i am a kind of a person who thrives in a fast paced environment. right now i am looking for an opportunity to impel met my technical and problem solving skills at an innovative software company.</p>
+<form class="form-horizontal" (submit)="addMessage($event)">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-4">
+      <input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Text input">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+    <div class="col-sm-6">
+     <textarea class="form-control" [(ngModel)]="message" name="message" rows="3"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" (submit)="addMessage($event)" class="btn btn-default">SUBMIT</button>
+    </div>
+  </div>
+</form>
